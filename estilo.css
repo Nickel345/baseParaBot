@@ -11,10 +11,15 @@ html {
 
 html,
 body {
+  min-height: 100vh;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   background: #33c5ff;
-background: linear-gradient(59deg, rgba(51, 197, 255, 1) 10%, rgba(0, 0, 0, 1) 30%, rgba(58, 0, 0, 1) 70%, rgba(255, 0, 0, 1) 90%);
+  background: linear-gradient(59deg, rgba(51, 197, 255, 1) 10%, rgba(0, 0, 0, 1) 30%, rgba(58, 0, 0, 1) 70%, rgba(255, 0, 0, 1) 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   /* Código para poner un cursor personalizado*/
  /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto; */
@@ -88,4 +93,52 @@ h2 {
   margin-bottom: 2em;
   cursor: pointer;
   font-family: ggText2;
+}
+
+@media (max-width: 675px){
+  #tituloPagina{
+    font-size: 3em;
+  }
+
+  .tituloPrediccion{
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 400px){
+  #tituloPagina{
+    font-size: 2.5em;
+  }
+
+  .prediccion{
+    font-size: 1.5em;
+  }
+
+  #boton {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 330px){
+  #tituloPagina{
+    font-size: 2em;
+  }
+
+  .tituloPrediccion{
+    font-size: 1em;
+  }
+
+  .prediccion{
+    font-size: 0.7
+  }
+}
+
+@media (min-width: 820px){
+  #tituloPagina{
+    font-size: 6em;
+  }
+
+  .tituloPrediccion{
+    font-size: 4em;
+  }
 }

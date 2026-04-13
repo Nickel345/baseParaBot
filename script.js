@@ -133,6 +133,7 @@ const imagen = document.getElementById("foto");
 const titulo = document.getElementById("titulo1");
 const prediccion = document.getElementById("prediccion1");
 const boton = document.getElementById("boton");
+const link = document.getElementById("enlace")
 
 // Función para generar un número aleatorio entre un valor mínimo y un máximo
 function numeroRandom(min, max) {
