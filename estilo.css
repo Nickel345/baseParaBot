@@ -13,42 +13,68 @@ html,
 body {
   margin: 0;
   padding: 0;
-  
+  background: #33c5ff;
+background: linear-gradient(59deg, rgba(51, 197, 255, 1) 10%, rgba(0, 0, 0, 1) 30%, rgba(58, 0, 0, 1) 70%, rgba(255, 0, 0, 1) 90%);
   
   /* Código para poner un cursor personalizado*/
  /* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto; */
 
 }
 
+@font-face{
+  font-family: ggTitle;
+  src: url(Assets/Fonts/IMPACT\ -\ STRIVE.OTF);
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: ggDesc;
+  src: url(Assets/Fonts/RED.TTF);
+}
+
+@font-face{
+  font-family: ggText;
+  src: url(Assets/Fonts/BITING\ MY\ NAILS.TTF);
+}
+
+@font-face{
+  font-family: ggText2;
+  src: url(Assets/Fonts/BITING\ MY\ NAILS\ OL.TTF);
+}
 
 h2 {
-  font-size: 1.1em;
+  opacity: 50;
+  color: white;
+  font-family: ggDesc;
 }
 
 #contenedor {
-  margin: auto 1em;
+  margin: auto 0.1em;
   text-align: center;
-
 }
 
 #tituloPagina {
-  margin-top: 1em;
+  margin-top: 0em;
   margin-bottom: 0;
-  font-family: sans-serif;
+  font-family: ggTitle;
+  color: white;
+  font-size: 5em;
 }
 
 #foto {
  height: 300px;
-  border: #ff7300 solid 5px;
+  border: #000000 solid 5px;
   margin-top: 15px;
 }
 
 .tituloPrediccion {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .prediccion {
-  font-size: 1.5em;
+  font-size: 2.1em;
+  font-family: ggText;
+  color: white;
 }
 
 .prediccion::first-letter {
@@ -56,9 +82,10 @@ h2 {
 }
 
 #boton {
-  font-size: 0.9em;
-  background-color: #3d00fdb5;
+  font-size: 2em;
+  background-color: #a90000b5;
   color: white;
   margin-bottom: 2em;
   cursor: pointer;
+  font-family: ggText2;
 }
